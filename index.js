@@ -15,7 +15,7 @@ const showMethodNUrl = (req, res, next) => {
 };
 app.use(showMethodNUrl);
 
-const checkIdExistence = (req, res, next) => {
+const checkUserId = (req, res, next) => {
     // finding user by id
     const userId = req.params.id;
     const userIndex = usersList.findIndex(user => user.id === userId);
@@ -55,7 +55,7 @@ app.get('/users', (req, res) => {
 });
 
 // view an specific user
-app.get('/users/:id', checkIdExistence, (req, res) => {
+app.get('/users/:id', checkUserId, (req, res) => {
     try {
         return res.json(usersList[req.userIndex]);
     } catch (err) {
@@ -93,7 +93,7 @@ app.post('/users', verifyUserData, (req, res) => {
 });
 
 // updating an user (by id)
-app.put('/users/:id', checkIdExistence, verifyUserData, (req, res) => {
+app.put('/users/:id', checkUserId, verifyUserData, (req, res) => {
     // receiving user data
     const { name, age } = req.body;
     const newData = { name, age };
@@ -113,7 +113,7 @@ app.put('/users/:id', checkIdExistence, verifyUserData, (req, res) => {
 });
 
 // delete an user
-app.delete('/users/:id', checkIdExistence, (req, res) => {
+app.delete('/users/:id', checkUserId, (req, res) => {
     try {
         usersList.splice(req.userIndex, 1);
         return res.status(204).json();
