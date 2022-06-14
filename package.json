@@ -1,0 +1,19 @@
+{
+    "name": "user-register",
+    "version": "1.0.0",
+    "description": "User registration API project",
+    "main": "index.js",
+    "repository": "https://github.com/Luk4x/user-register.git",
+    "author": "Lucas Maciel Francisco (Luk4x)",
+    "license": "MIT",
+    "scripts": {
+        "app": "nodemon"
+    },
+    "dependencies": {
+        "express": "^4.18.1",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    }
+}
