@@ -32,7 +32,7 @@ const checkIdExistence = (req, res, next) => {
 };
 
 // verify if client is trying to change or add id information
-const verifyClientData = (req, res, next) => {
+const verifyUserData = (req, res, next) => {
     const { id } = req.body;
 
     if (id) {
@@ -54,8 +54,18 @@ app.get('/users', (req, res) => {
     }
 });
 
+// view an specific user
+app.get('/users/:id', checkIdExistence, (req, res) => {
+    try {
+        return res.json(usersList[req.userIndex]);
+    } catch (err) {
+        console.error(`Something happened: ${err.message}`);
+        return res.status(500).json({ error: err.message });
+    }
+});
+
 // create a user
-app.post('/users', verifyClientData, (req, res) => {
+app.post('/users', verifyUserData, (req, res) => {
     /* request(body) pattern:
         {
             "name": "Leone",
@@ -83,7 +93,7 @@ app.post('/users', verifyClientData, (req, res) => {
 });
 
 // updating an user (by id)
-app.put('/users/:id', checkIdExistence, verifyClientData, (req, res) => {
+app.put('/users/:id', checkIdExistence, verifyUserData, (req, res) => {
     // receiving user data
     const { name, age } = req.body;
     const newData = { name, age };
@@ -96,6 +106,17 @@ app.put('/users/:id', checkIdExistence, verifyClientData, (req, res) => {
             }
         }
         return res.json({ updatedUser: usersList[req.userIndex] });
+    } catch (err) {
+        console.error(`Something happened: ${err.message}`);
+        return res.status(500).json({ error: err.message });
+    }
+});
+
+// delete an user
+app.delete('/users/:id', checkIdExistence, (req, res) => {
+    try {
+        usersList.splice(req.userIndex, 1);
+        return res.status(204).json();
     } catch (err) {
         console.error(`Something happened: ${err.message}`);
         return res.status(500).json({ error: err.message });
