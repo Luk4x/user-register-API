@@ -61,7 +61,7 @@ Ao chamar a rota `POST /users` 2 vezes, passando `{ name: "Hana", age: 23 }` pel
 ];
 ```
 
-Ao chamar a rota `GET /users/:e671f3a7-4d0a-4c44-b850-c16ab6785e89`, o retorno é:
+Ao chamar a rota `GET /users/e671f3a7-4d0a-4c44-b850-c16ab6785e89`, o retorno é:
 
 ```js
 {
