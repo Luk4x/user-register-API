@@ -79,7 +79,7 @@ When calling the `GET /users/e671f3a7-4d0a-4c44-b850-c16ab6785e89` route, the re
 - `verifyUserData`: Its function is to verify the user data sent by the `body`, and take action if this request intends to modify data that the user does not have permission to.
 
 ## How to use
-To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js v16.13.2](https://nodejs.org/en/) or higher installed on your computer.<br>In terminal:
+To clone and run this application, you'll need [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) or higher and an API Client like [Insomnia](https://insomnia.rest/) installed on your computer.<br>In terminal:
 
 ```bash
 # Clone this repository:
@@ -94,7 +94,7 @@ $ yarn install
 # Run the project:
 $ yarn app
 
-# The server will start at http://localhost:3000/
+# The server will start at http://localhost:3000/, and you can explore it using Insomnia.
 ```
 
 ## Contributors Contact
