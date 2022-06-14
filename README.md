@@ -79,7 +79,7 @@ Ao chamar a rota `GET /users/e671f3a7-4d0a-4c44-b850-c16ab6785e89`, o retorno é
 - `verifyUserData`: Sua função é verificar os dados do usuário enviados pelo `body`, e tomar medidas caso essa requisição tenha a intenção de modificar dados que o usuário não tem permissão.
 
 ## Como usar
-Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/) e [Node.js v16.13.2](https://nodejs.org/en/) ou superior instalados em seu computador.<br>No terminal:
+Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior, e de um API Client como o [Insomnia](https://insomnia.rest/) instalados em seu computador.<br>No terminal:
 
 ```bash
 # Clone esse repositório:
@@ -94,7 +94,7 @@ $ yarn install
 # Executar o projeto
 $ yarn app
 
-# O servidor irá iniciar em: http://localhost:3000/
+# O servidor irá iniciar em http://localhost:3000/, e você pode explorá-lo usando o Insomnia.
 ```
 
 ## Contato dos Contribuintes
