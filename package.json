@@ -1,9 +1,9 @@
 {
-    "name": "user-register",
+    "name": "user-register-API",
     "version": "1.0.0",
     "description": "User registration API project",
     "main": "index.js",
-    "repository": "https://github.com/Luk4x/user-register.git",
+    "repository": "https://github.com/Luk4x/user-register-API.git",
     "author": "Lucas Maciel Francisco (Luk4x)",
     "license": "MIT",
     "scripts": {
