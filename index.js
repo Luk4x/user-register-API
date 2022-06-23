@@ -2,7 +2,9 @@ const express = require('express');
 const uuid = require('uuid');
 const app = express();
 app.use(express.json());
-const port = 3000;
+const port = 3001;
+const cors = require('cors');
+app.use(cors());
 
 // users registered
 const usersList = [];
