@@ -94,7 +94,7 @@ $ yarn install
 # Executar o projeto
 $ yarn app
 
-# O servidor irá iniciar em http://localhost:3000/, e você pode explorá-lo usando o Insomnia.
+# O servidor irá iniciar em http://localhost:3001/, e você pode explorá-lo usando o Insomnia.
 ```
 
 ## Contato dos Contribuintes
