@@ -18,8 +18,13 @@
 </p>
 <br>
 
+## Technologies used
+- [NodeJS](https://nodejs.org)
+- [ExpressJS](https://expressjs.com/)
+- [UUID](https://www.uuidgenerator.net/)
+
 ## About
-This project is an API that performs user registration.
+This project is an API that performs the registration of users, serving as the basis for the [Interface](https://github.com/Luk4x/user-register-interface) I built.
 
 ### Routes
 -   `POST /users`: This route is given the user's name and age. this information is passed by the `body` of the request, and based on it a new user is registered in an array, in the following format:
