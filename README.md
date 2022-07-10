@@ -17,9 +17,14 @@
   <video src="https://user-images.githubusercontent.com/86276393/173689507-cae47ac3-b85c-495f-8cd2-d548301d0610.mp4">
 </p>
 <br>
-  
+
+## Tecnologias utilizadas
+- [NodeJS](https://nodejs.org)
+- [ExpressJS](https://expressjs.com/)
+- [UUID](https://www.uuidgenerator.net/)
+
 ## Sobre
-Esse projeto é uma API que realiza o cadastro de usuários.
+Esse projeto é uma API que realiza o cadastro de usuários, servindo de base para a [Interface](https://github.com/Luk4x/user-register-interface) que construí.
 
 ### Rotas
 -   `POST /users`: Essa rota recebe o nome e a idade do usuário. essas informações são passadas pelo `body` da requisição, e com base nelas um novo usuário é registrado num array, no seguinte formato:
