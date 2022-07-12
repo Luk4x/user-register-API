@@ -24,7 +24,7 @@
 - [UUID](https://www.uuidgenerator.net/)
 
 ## Sobre
-Esse projeto é uma API que realiza o cadastro de usuários, servindo de base para a [Interface](https://github.com/Luk4x/user-register-interface) que construí.
+Esse projeto é uma API que realiza o cadastro de usuários, servindo como base para a [Interface](https://github.com/Luk4x/user-register-interface) que construí.
 
 ### Rotas
 -   `POST /users`: Essa rota recebe o nome e a idade do usuário. essas informações são passadas pelo `body` da requisição, e com base nelas um novo usuário é registrado num array, no seguinte formato:
