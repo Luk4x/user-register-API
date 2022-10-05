@@ -12,23 +12,43 @@
 </table>
 <br>
 
-# User Register API
-<p align="center">
-  <video src="https://user-images.githubusercontent.com/86276393/173689507-cae47ac3-b85c-495f-8cd2-d548301d0610.mp4">
-</p>
+# 👥 Users Project API
 
-> Acesse o projeto [AQUI](https://luk4x-user-register-api.herokuapp.com/users)
+<br>
+<p align="center">
+  <a href="#-apresentação-em-vídeo-do-projeto">Vídeo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-rotas-e-exemplos">Rotas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-middlewares">Middlewares</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-clonando-o-projeto">Clone</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contato-dos-contribuintes">Contato</a>
+</p>
 <br>
 
-## Tecnologias utilizadas
+## 📹 Apresentação em Vídeo do Projeto
+<div align="center">
+  <video src="https://user-images.githubusercontent.com/86276393/173689507-cae47ac3-b85c-495f-8cd2-d548301d0610.mp4">
+</div>
+
+> **Caso o vídeo apresente algum erro, recarregue a página!**<br>
+> Acesse o projeto online **[AQUI](https://luk4x-user-register-api.herokuapp.com/users)**
+
+## 🚀 Tecnologias utilizadas
+
 - [NodeJS](https://nodejs.org)
 - [ExpressJS](https://expressjs.com/)
 - [UUID](https://www.uuidgenerator.net/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Yarn](https://yarnpkg.com/)
 
-## Sobre
-Esse projeto é uma API que realiza o cadastro de usuários, servindo como base para a [Interface](https://github.com/Luk4x/user-register-interface) que construí.
+## 📝 Sobre
 
-### Rotas
+> Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
+
+Esse projeto é a API do **Users**, uma aplicação Web que realiza o cadastro e a gerência de usuários, servindo como base para a sua [Interface](https://github.com/Luk4x/user-register-interface) que desenvolvi essencialmente em ReactJS.
+
+### 📃 Rotas e Exemplos
 -   `POST /users`: Essa rota recebe o nome e a idade do usuário. essas informações são passadas pelo `body` da requisição, e com base nelas um novo usuário é registrado num array, no seguinte formato:
     
     ```js
@@ -50,8 +70,9 @@ Esse projeto é uma API que realiza o cadastro de usuários, servindo como base 
   
 -   `DELETE /users/:id`:  Com base no `id` enviado, deleta o usuário que o possui.
 
-#### Exemplos
-Ao chamar a rota `POST /users` 2 vezes, passando `{ name: "Hana", age: 23 }` pelo `body`, o array fica dessa forma:
+<br>
+
+- Ao chamar a rota `POST /users` 2 vezes, passando `{ name: "Hana", age: 23 }` pelo `body`, o array fica dessa forma:
 
 ```js
 [
@@ -68,7 +89,7 @@ Ao chamar a rota `POST /users` 2 vezes, passando `{ name: "Hana", age: 23 }` pel
 ];
 ```
 
-Ao chamar a rota `GET /users/e671f3a7-4d0a-4c44-b850-c16ab6785e89`, o retorno é:
+- Ao chamar a rota `GET /users/e671f3a7-4d0a-4c44-b850-c16ab6785e89`, o retorno é:
 
 ```js
 {
@@ -78,33 +99,35 @@ Ao chamar a rota `GET /users/e671f3a7-4d0a-4c44-b850-c16ab6785e89`, o retorno é
 };
 ```
 
-### Middlewares
+### 🔑 Middlewares
 - `checkUserId`: Sua função é verificar se o ID recebido existe e tomar medidas em caso de inexistência. Ele é usado em todas as rotas que recebem um ID.
 
 - `showMethodNUrl`: Sua função é mostrar no console o método(GET,POST,PUT,DELETE, etc) e também a url da requisição. Ele é usado em todas as requisições e tem o objetivo apenas de facilitar e organizar o desenvolvimento.
 
 - `verifyUserData`: Sua função é verificar os dados do usuário enviados pelo `body`, e tomar medidas caso essa requisição tenha a intenção de modificar dados que o usuário não tem permissão.
 
-## Como usar
-Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior, e de um API Client como o [Insomnia](https://insomnia.rest/) instalados em seu computador.<br>No terminal:
+## 📖 Clonando o Projeto
+
+Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior, [Yarn](https://yarnpkg.com/), e de preferência, um API Client como o [Insomnia](https://insomnia.rest/) (mas também pode ser acessado pelo navegador) previamente instalados.<br>No terminal:
 
 ```bash
-# Clone esse repositório:
-$ git clone https://github.com/Luk4x/user-register-API.git
+# Clone esse repositório com:
+> git clone https://github.com/Luk4x/user-register-API.git
 
-# Entre no repositório:
-$ cd user-register-API
+# Entre no repositório com:
+> cd user-register-API
 
-# Instalar dependências 
-$ yarn install
+# Instale as dependências com: 
+> yarn install
 
-# Executar o projeto
-$ yarn app
+# Execute o projeto com:
+> yarn app
 
-# O servidor irá iniciar em http://localhost:3001/, e você pode explorá-lo usando o Insomnia.
+# Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://localhost:3001/ ou http://127.0.0.1:5173/)
 ```
 
-## Contato dos Contribuintes
+## 🤝 Contato dos Contribuintes
+
 <table>
   <tr>
     <td align="center">
@@ -117,3 +140,7 @@ $ yarn app
     </td>
   </tr>
 </table>
+
+<p align="right">
+  <a href="#-users-project-api">Voltar ao Topo</a>
+</p>
