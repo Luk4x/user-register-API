@@ -33,7 +33,7 @@
 </div>
 
 > **Caso o vídeo apresente algum erro, recarregue a página!**<br>
-> Acesse o projeto online **[AQUI](https://luk4x-user-register-api.herokuapp.com/users)**
+> Acesse o projeto online **[AQUI](https://luk4x-user-register-api.onrender.com/users)**
 
 ## 🚀 Tecnologias utilizadas
 
